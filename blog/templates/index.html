@@ -4,7 +4,7 @@
 <ul class="list-group">
    {% if  blogs %}
        {% for blog in blogs  %}
-    <li class="list-group-items">
+    <li class="list-group-item">
         <a href="{% url 'detail' blog.id %}">{{ blog.title }}</a>
     </li>
        {% endfor %}
